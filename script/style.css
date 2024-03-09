@@ -1,0 +1,971 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.poster img {
+    width: 100%;
+
+}
+
+#searcher {
+    background: white;
+    max-width: fit-content;
+    border-radius: 30px;
+}
+
+#search-box {
+    border: 1px solid black;
+    outline: none;
+    background: none;
+    padding: 0;
+    width: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+#search-btn {
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    background: none;
+    padding: 10px;
+}
+
+#searcher:hover #search-box,
+#search-box:valid {
+    width: 300px;
+    padding-left: 10x;
+
+}
+
+/*----------------------------hahahaha------------------------*/
+body::-webkit-scrollbar {
+    width: 1px;
+}
+
+body::-webkit-scrollbar-track {
+    width: 1px;
+    background-color: black;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 99;
+}
+
+#header {
+    background-color: white;
+    width: 100%;
+}
+
+.foster img {
+    width: 100%;
+}
+
+.khung {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    padding-top: 20px;
+}
+
+.right>ul {
+    display: flex;
+    list-style: none;
+}
+
+.right>ul>li {
+    padding-right: 40px;
+}
+
+.left {
+    font-size: 30pt;
+    padding-left: 550px;
+}
+
+ul>li img {
+    width: 30px;
+    height: 30px;
+}
+
+ul#menu {
+    list-style: none;
+}
+
+#wappaer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: white;
+}
+
+ul#menu {
+    display: flex;
+}
+
+ul#menu>li {
+    padding: 0 30px;
+    font-family: monospace;
+    font-size: 15pt;
+}
+
+ul#menu>li {
+    position: relative;
+}
+
+ul#menu>li a {
+    display: block;
+    padding: 15px 0px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+ul#menu ul.sub-menu {
+    position: absolute;
+    list-style: none;
+    background: white;
+    padding: 10px 0px;
+    width: 500px;
+    height: 300px;
+    display: none;
+}
+
+ul#menu li:hover>ul.sub-menu {
+    display: flex;
+}
+
+ul#menu ul.sub-menu a {
+    padding: 5px 8px;
+    font-size: 12pt;
+    left: 0;
+}
+
+ul#menu ul.sub-menu li:hover a {
+    color: blueviolet;
+}
+
+#menu>li>a::before {
+    content: "";
+    height: 4px;
+    width: 0;
+    background: blueviolet;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    transition: all 0.2s ease-in-out;
+}
+
+#menu>li:hover>a {
+    color: blueviolet;
+}
+
+#menu>li:hover>a::before {
+    width: 100%;
+}
+
+#menu>li img {
+    width: 15px;
+    height: 15px;
+}
+
+#menu ul.sub-menu ul.Sub-menu {
+    padding-top: 20px;
+}
+
+#menu ul.sub-menu ul.Sub-menu li {
+    display: block;
+    list-style: none;
+}
+
+#menu ul.sub-menu ul.Sub-menu li a {
+    font-size: 11px;
+    color: rgb(143, 143, 143);
+}
+
+#menu ul.sub-menu ul.Sub-menu li:hover a {
+    color: blueviolet;
+}
+
+ul#menu ul.suv-menu {
+    position: absolute;
+    list-style: none;
+    background: white;
+    left: -237px;
+    width: 1800px;
+    height: 300px;
+    display: none;
+    padding-left: 80px;
+}
+
+ul#menu li:hover>ul.suv-menu {
+    display: flex;
+}
+
+ul#menu ul.suv-menu a {
+    padding: 5px 8px;
+    font-size: 12pt;
+    left: 0;
+    padding: 0 80px;
+}
+
+ul#menu ul.suv-menu li:hover a {
+    color: blueviolet;
+}
+
+#menu ul.suv-menu ul.Sub-menu {
+    padding-top: 20px;
+}
+
+#menu ul.suv-menu ul.Sub-menu li {
+    display: block;
+    list-style: none;
+}
+
+#menu ul.suv-menu ul.Sub-menu li a {
+    font-size: 11px;
+    color: rgb(143, 143, 143);
+}
+
+#menu ul.suv-menu ul.Sub-menu li:hover a {
+    color: blueviolet;
+}
+
+ul#taikhoan ul.second-menu {
+    position: absolute;
+    list-style: none;
+    background: pink;
+    padding: 10px 5px;
+    width: 97px;
+    height: 70px;
+    display: none;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+ul#taikhoan li:hover>ul.second-menu {
+    display: block;
+}
+
+ul#taikhoan ul.second-menu a {
+    padding: 0 15px;
+    font-size: 10pt;
+    left: 0;
+    color: black;
+    text-decoration: none;
+    font-family: monospace;
+}
+
+ul#taikhoan ul.second-menu li:hover a {
+    color: blueviolet;
+}
+
+#taikhoan ul.second-menu {
+    padding-top: 20px;
+}
+
+#taikhoan ul.second-menu li {
+    display: block;
+    list-style: none;
+}
+
+#menu ul.second-menu li a {
+    font-size: 11px;
+    color: rgb(143, 143, 143);
+}
+
+#menu ul.second-menu li:hover a {
+    color: blueviolet;
+}
+
+.cachangthoitrangnoitieng {
+    padding-left: 100px;
+}
+
+.vouchervagiamgia {
+    padding-left: 100px;
+}
+
+.ten1 {
+    font-size: 50pt;
+}
+
+.newalbum img {
+    width: 100%;
+}
+
+.khamphangay img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.bosuutap {
+    position: absolute;
+    padding-top: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.vien1 {
+    margin: 0 100px;
+}
+
+.ten {
+    color: white;
+}
+
+.vien {
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 40px;
+    font-size: 30pt;
+    font-family: monospace;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    width: 300px;
+    height: 50px;
+}
+
+.vien a {
+    color: white;
+}
+
+body {
+    width: 100%;
+}
+
+#thanhvoucher {
+    padding-top: 40px;
+}
+
+.sapxep {
+    display: flex;
+    flex-wrap: nowrap;
+    box-sizing: content-box;
+}
+
+.voucher {
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    border-style: solid;
+    border-color: rgb(190, 190, 190);
+    margin: 0 25px;
+    padding-bottom: 10px;
+    background-color: whitesmoke;
+}
+
+.vienvoucher {
+    width: 100%;
+    padding: 10px;
+}
+
+.dong1 {
+    margin-bottom: 20px;
+    font-family: monospace;
+    font-size: 13pt;
+    text-align: center;
+}
+
+.dong2 {
+    margin-bottom: 5px;
+    font-family: monospace;
+    font-size: 10pt;
+    text-align: center;
+}
+
+.benphai {
+    float: right;
+    padding-right: 20px;
+    padding-top: 25px;
+}
+
+.bentrai {
+    float: left;
+}
+
+.bentrai button {
+    border-radius: 20px;
+    border-color: rgb(107, 107, 255);
+    font-size: 10pt;
+    color: white;
+    background-color: rgb(107, 107, 255);
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.dong3 {
+    width: 100%;
+    text-align: center;
+    font-size: 30pt;
+    font-family: monospace;
+    padding-top: 100px;
+
+}
+
+/*-----------------------------------------hinhdep-----------------------------*/
+#noibat {
+    width: 100%;
+    padding-top: 50px;
+}
+
+.khungnoibat {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 80px;
+}
+
+.cautao-nut button {
+    border-radius: 100%;
+    border: 1px solid black;
+    padding: 1px;
+    font-size: 12pt;
+}
+
+.cautao-nut img {
+    z-index: 99;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.cautao-nut button i {
+    padding-top: 3px;
+    margin: 0 3px;
+}
+
+.nut-hiensanpham {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding-top: 280px;
+    margin-left: 120px;
+}
+
+.o-sanpham {
+    display: none;
+}
+
+.hinh img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.khunghinh {
+    margin: 0 20px;
+    position: relative;
+}
+
+.tencollection {
+    font-size: 16pt;
+    text-align: center;
+    padding-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.xemchitiet {
+    font-size: 11pt;
+    padding-top: 10px;
+}
+
+/*---------------------------------------*/
+
+/*----------------------------thanhsanpham-----------------*/
+#loaisanpham {
+    width: 100%;
+}
+
+.khungloaisanpham {
+    margin: 0 100px;
+    padding-top: 100px;
+}
+
+.loaisanpham1 {
+    float: left;
+}
+
+.xemtatca {
+    float: right;
+    font-size: 14pt;
+    font-family: monospace;
+    padding: 10px 20px;
+    border-style: inset;
+    background-color: black;
+    border-color: black;
+}
+
+.xemtatca a {
+    color: white;
+}
+
+.thongtin {
+    font-size: 18pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.thongtin1 {
+    font-size: 27pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#bannerc {
+    padding-top: 100px;
+}
+
+#thanhsanpham {
+    width: 100%;
+}
+
+.khungsanpham {
+    padding-top: 100px;
+}
+
+.sanpham1 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 80px;
+}
+
+.sanpham2 {
+    margin: 0 40px;
+}
+
+.hinhsanpham {
+    overflow: hidden;
+}
+
+.hinhsanpham a {
+    position: relative;
+    display: block;
+}
+
+.hinhsanpham a .icon {
+    position: absolute;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.hinhsanpham a:hover .icon {
+    bottom: 6%;
+}
+
+.hinhsanpham img {
+    display: block;
+    width: 270px;
+    height: 300px;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.hinhsanpham:hover img {
+    transform: scale(0.9);
+}
+
+.hinhsanpham::before img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.icon {
+    display: flex;
+    flex-wrap: nowrap;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 3px;
+}
+
+.icon img {
+    width: 20px;
+    height: 21px;
+    margin: 0 3px;
+    object-fit: cover;
+}
+
+.tensanpham {
+    font-size: 14pt;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+}
+
+.giaban {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.giadagiam {
+    margin-right: 5px;
+    font-size: 13pt;
+}
+
+.phamtramgiam {
+    color: red;
+    font-size: 11pt;
+    text-align: center;
+}
+
+.giagoc {
+    margin-right: 15px;
+    font-size: 13pt;
+    text-decoration: line-through;
+    color: gray;
+}
+
+.quatang {
+    width: 85%;
+    padding-top: 10px;
+}
+
+.khungquatang {
+    border-style: solid;
+    border-color: aquamarine;
+    border-radius: 5px;
+    border-left-width: 7px;
+    border-left-color: rgb(80, 0, 177);
+}
+
+.noidungquatang {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    text-align: left;
+}
+
+#thanhsanpphammoi {
+    width: 100%;
+    padding-top: 100px;
+}
+
+.khungsanphammoi {
+    margin: 0 90px;
+}
+
+.xemtatca1 {
+    float: right;
+}
+
+.sanphammoi {
+    float: left;
+}
+
+.thongtinsanphammoi {
+    font-size: 23pt;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.thongtinsanphammoi1 {
+    font-size: 17pt;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.xemtatca1 {
+    font-size: 14pt;
+    font-family: monospace;
+    padding: 10px 20PX;
+    text-align: center;
+    border-style: inset;
+    background-color: black;
+    border-color: black;
+}
+
+.xemtatca1 a {
+    color: white;
+}
+
+.thanhhinhanhsanphammoi {
+    width: 100%;
+    padding-top: 140px;
+}
+
+.khunghinhnhsanphammoi {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 110px;
+}
+
+.hinhanhsanphammoi {
+    margin: 0 20px;
+}
+
+.hinhanhsanphammoi img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.hinhanhsanphammoi:hover img {
+    transform: scale(0.9);
+}
+
+#footter {
+    width: 100%;
+    height: 460px;
+    background: black;
+}
+
+.khung-footter {
+    display: flex;
+    padding: 0 2%;
+}
+
+.diachi {
+    padding-top: 50px;
+    margin: 0 40px;
+}
+
+.tenshop {
+    color: white;
+    font-size: 20pt;
+}
+
+.ghi {
+    padding: 10px 0;
+}
+
+.ghi a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-family: monospace;
+}
+
+.ghi img {
+    width: 20px;
+    height: 20px;
+}
+
+.dichphukhachhang {
+    padding-top: 50px;
+    margin: 0 40px;
+}
+
+.ten-dichphukhachhang {
+    padding-bottom: 30px;
+}
+
+.ten-dichphukhachhang a {
+    color: white;
+    font-family: monospace;
+    font-size: 15pt;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#cacdichphu ul {
+    list-style: none;
+    display: block;
+}
+
+#cacdichphu ul li {
+    padding: 5px 0;
+}
+
+#cacdichphu ul li a {
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 12pt;
+    color: white;
+}
+
+.danhmucsanpham {
+    padding-top: 50px;
+    margin: 0 40px;
+}
+
+.ten-danhmucsanpham {
+    padding-bottom: 30px;
+}
+
+.ten-danhmucsanpham a {
+    color: white;
+    font-family: monospace;
+    font-size: 15pt;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#cacsanpham ul {
+    list-style: none;
+    display: block;
+}
+
+#cacsanpham ul li {
+    padding: 5px 0;
+}
+
+#cacsanpham ul li a {
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 12pt;
+    color: white;
+}
+
+.capnhatthongtin {
+    padding-top: 50px;
+    margin: 0 40px;
+}
+
+.ten-capnhatthongtinmoinhat a {
+    color: white;
+    font-size: 15pt;
+    font-family: monospace;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.baomat img {
+    width: 130px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.thanh-baomat {
+    display: flex;
+    padding: 20px 0;
+}
+
+.baomat2 img {
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+}
+
+.khungthanhgopy {
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    width: 300px;
+    height: 40px;
+    border-radius: 100px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.noidungthanhgopy {
+    padding: -1px 0;
+}
+
+.noidungthanhgopy input {
+    width: 200px;
+    height: 40px;
+    border-radius: 100px;
+    border-style: none;
+    background: none;
+}
+
+.thanhdangky {
+    padding-right: 2px;
+}
+
+.thanhdangky button {
+    width: 90px;
+    height: 40px;
+    border-radius: 100px;
+    background: rgb(54, 53, 53);
+    color: white;
+}
+
+#cacsanpham ul li:hover a {
+    color: rgb(54, 53, 53);
+}
+
+#cacdichphu ul li:hover a {
+    color: rgb(54, 53, 53);
+}
+
+.ghi:hover a {
+    color: rgb(54, 53, 53);
+}
+
+.khung-thanhgopy {
+    padding: 30px 0;
+}
+
+.xuhuongthoitrang {
+    padding: 50px 200px;
+}
+
+.khung-xuhuongthoitrang a {
+    font-size: 17pt;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.khung-baibao {
+    display: flex;
+    padding: 0 10%;
+    margin-top: 15px;
+}
+
+#baobao {
+    padding: 50px 0;
+}
+
+.content-baibao {
+    display: flex;
+    padding: 0 30px;
+}
+
+.hinhanhbaibao img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.noidungbaibao {
+    padding: 0 20px;
+}
+
+.noidungbaibao a {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+.tenbaibao {
+    font-weight: bold;
+    font-size: 15pt;
+    padding-bottom: 20px;
+}
+
+.ngaysanxuatbaibao {
+    font-size: 10pt;
+}
+
+.ngaysanxuatbaibao a {
+    color: rgb(54, 53, 53);
+    ;
+}
+
+.tomtat-baibao {
+    font-family: monospace;
+    padding-top: 5px;
+}
+
+.tomtat-baibao a {
+    color: #575656;
+}
+
+.second-menu {
+    right: 0px;
+}

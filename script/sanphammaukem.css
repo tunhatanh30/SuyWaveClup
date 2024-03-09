@@ -1,0 +1,804 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+}
+
+.main {
+    height: 80%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.list-image {
+    height: 20%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-feature {
+    transition: 0.1s;
+    animation: slideLeft 1s ease-in-out forwards;
+}
+
+.list-image div {
+    flex: 1;
+    padding: 2px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.control {
+    position: absolute;
+    top: 50%;
+    font-size: 50px;
+    color: black;
+    transform: translateY(-50%)
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.active {
+    background: rgb(110, 110, 255);
+}
+
+/*-------------------------header----------------------*/
+.poster img {
+    width: 100%;
+
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 99;
+}
+
+body::-webkit-scrollbar {
+    width: 1px;
+}
+
+body::-webkit-scrollbar-track {
+    width: 1px;
+    background-color: black;
+}
+
+.second-menu {
+    right: 0;
+}
+
+#header {
+    background-color: white;
+    width: 100%;
+
+}
+
+.foster img {
+    width: 100%;
+}
+
+.khung {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    padding-top: 20px;
+}
+
+.right>ul {
+    display: flex;
+    list-style: none;
+}
+
+.right>ul>li {
+    padding-right: 40px;
+}
+
+.left {
+    font-size: 30pt;
+    padding-left: 500px;
+}
+
+ul>li img {
+    width: 30px;
+    height: 30px;
+}
+
+ul#menu {
+    list-style: none;
+}
+
+#wappaer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: white;
+}
+
+ul#menu {
+    display: flex;
+}
+
+ul#menu>li {
+    padding: 0 30px;
+    font-family: monospace;
+    font-size: 15pt;
+}
+
+ul#menu>li {
+    position: relative;
+}
+
+ul#menu>li a {
+    display: block;
+    padding: 15px 0px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+ul#menu ul.sub-menu {
+    position: absolute;
+    list-style: none;
+    background: white;
+    padding: 10px 0px;
+    width: 500px;
+    height: 300px;
+    display: none;
+}
+
+ul#menu li:hover>ul.sub-menu {
+    display: flex;
+}
+
+ul#menu ul.sub-menu a {
+    padding: 5px 8px;
+    font-size: 12pt;
+    left: 0;
+}
+
+ul#menu ul.sub-menu li:hover a {
+    color: blueviolet;
+}
+
+#menu>li>a::before {
+    content: "";
+    height: 4px;
+    width: 0;
+    background: blueviolet;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    transition: all 0.2s ease-in-out;
+}
+
+#menu>li:hover>a {
+    color: blueviolet;
+}
+
+#menu>li:hover>a::before {
+    width: 100%;
+}
+
+#menu>li img {
+    width: 15px;
+    height: 15px;
+}
+
+#menu ul.sub-menu ul.Sub-menu {
+    padding-top: 20px;
+}
+
+#menu ul.sub-menu ul.Sub-menu li {
+    display: block;
+    list-style: none;
+}
+
+#menu ul.sub-menu ul.Sub-menu li a {
+    font-size: 11px;
+    color: rgb(143, 143, 143);
+}
+
+#menu ul.sub-menu ul.Sub-menu li:hover a {
+    color: blueviolet;
+}
+
+ul#menu ul.suv-menu {
+    position: absolute;
+    list-style: none;
+    background: white;
+    left: -237px;
+    width: 1517px;
+    height: 300px;
+    display: none;
+    padding-left: 80px;
+}
+
+ul#menu li:hover>ul.suv-menu {
+    display: flex;
+}
+
+ul#menu ul.suv-menu a {
+    padding: 5px 8px;
+    font-size: 12pt;
+    left: 0;
+    padding: 0 80px;
+}
+
+ul#menu ul.suv-menu li:hover a {
+    color: blueviolet;
+}
+
+#menu ul.suv-menu ul.Sub-menu {
+    padding-top: 20px;
+}
+
+#menu ul.suv-menu ul.Sub-menu li {
+    display: block;
+    list-style: none;
+}
+
+#menu ul.suv-menu ul.Sub-menu li a {
+    font-size: 11px;
+    color: rgb(143, 143, 143);
+}
+
+#menu ul.suv-menu ul.Sub-menu li:hover a {
+    color: blueviolet;
+}
+
+ul#taikhoan ul.second-menu {
+    position: absolute;
+    list-style: none;
+    background: pink;
+    padding: 10px 5px;
+    width: 97px;
+    height: 70px;
+    display: none;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+ul#taikhoan li:hover>ul.second-menu {
+    display: block;
+}
+
+ul#taikhoan ul.second-menu a {
+    padding: 0 15px;
+    font-size: 10pt;
+    left: 0;
+    color: black;
+    text-decoration: none;
+    font-family: monospace;
+}
+
+ul#taikhoan ul.second-menu li:hover a {
+    color: blueviolet;
+}
+
+#taikhoan ul.second-menu {
+    padding-top: 20px;
+}
+
+#taikhoan ul.second-menu li {
+    display: block;
+    list-style: none;
+}
+
+#menu ul.second-menu li a {
+    font-size: 11px;
+    color: rgb(143, 143, 143);
+}
+
+#menu ul.second-menu li:hover a {
+    color: blueviolet;
+}
+
+/*-------------------------footer----------------------*/
+#footter {
+    width: 100%;
+    height: 460px;
+    background: black;
+}
+
+.khung-footter {
+    display: flex;
+    padding: 0 2%;
+}
+
+.diachi {
+    padding-top: 50px;
+    margin: 0 40px;
+}
+
+.tenshop {
+    color: white;
+    font-size: 20pt;
+}
+
+.ghi {
+    padding: 10px 0;
+}
+
+.ghi a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-family: monospace;
+}
+
+.ghi img {
+    width: 20px;
+    height: 20px;
+}
+
+.dichphukhachhang {
+    padding-top: 50px;
+    margin: 0 40px;
+}
+
+.ten-dichphukhachhang {
+    padding-bottom: 30px;
+}
+
+.ten-dichphukhachhang a {
+    color: white;
+    font-family: monospace;
+    font-size: 15pt;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#cacdichphu ul {
+    list-style: none;
+    display: block;
+}
+
+#cacdichphu ul li {
+    padding: 5px 0;
+}
+
+#cacdichphu ul li a {
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 12pt;
+    color: white;
+}
+
+.danhmucsanpham {
+    padding-top: 50px;
+    margin: 0 40px;
+}
+
+.ten-danhmucsanpham {
+    padding-bottom: 30px;
+}
+
+.ten-danhmucsanpham a {
+    color: white;
+    font-family: monospace;
+    font-size: 15pt;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#cacsanpham ul {
+    list-style: none;
+    display: block;
+}
+
+#cacsanpham ul li {
+    padding: 5px 0;
+}
+
+#cacsanpham ul li a {
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 12pt;
+    color: white;
+}
+
+.capnhatthongtin {
+    padding-top: 50px;
+    margin: 0 40px;
+}
+
+.ten-capnhatthongtinmoinhat a {
+    color: white;
+    font-size: 15pt;
+    font-family: monospace;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.baomat img {
+    width: 130px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.thanh-baomat {
+    display: flex;
+    padding: 20px 0;
+}
+
+.baomat2 img {
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+}
+
+.khungthanhgopy {
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    width: 300px;
+    height: 40px;
+    border-radius: 100px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.noidungthanhgopy {
+    padding: -1px 0;
+}
+
+.noidungthanhgopy input {
+    width: 200px;
+    height: 40px;
+    border-radius: 100px;
+    border-style: none;
+    background: none;
+}
+
+.thanhdangky {
+    padding-right: 2px;
+}
+
+.thanhdangky button {
+    width: 90px;
+    height: 37px;
+    border-radius: 100px;
+    background: rgb(54, 53, 53);
+    color: white;
+}
+
+#cacsanpham ul li:hover a {
+    color: rgb(54, 53, 53);
+}
+
+#cacdichphu ul li:hover a {
+    color: rgb(54, 53, 53);
+}
+
+.ghi:hover a {
+    color: rgb(54, 53, 53);
+}
+
+.khung-thanhgopy {
+    padding: 30px 0;
+}
+
+.iconlienket img {
+    width: 50px;
+    height: 50px;
+}
+
+/*----------------------------section--------------------*/
+#section {
+    width: 100%;
+    height: 220vh;
+    padding-top: 200px;
+}
+
+.thongtin-sanpham {
+    padding-left: 30px;
+}
+
+.chitiet-sanpham {
+    padding: 30px 200px;
+    display: flex;
+}
+
+.ten-sanpham {
+    text-align: left;
+}
+
+.ten-sanpham {
+    font-size: 25pt;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.gia-sanpham {
+    display: flex;
+    padding-top: 20px;
+}
+
+.gia-dagiam {
+    font-size: 17pt;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 10px;
+}
+
+.gia-goc {
+    font-size: 12pt;
+    color: #333;
+    font-weight: bold;
+    font-family: monospace;
+    text-decoration: line-through;
+    padding-top: 6px;
+}
+
+.phamtramgiamgia {
+    font-size: 13pt;
+    color: red;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.bangmau {
+    padding-bottom: 30px;
+    margin-top: 10px;
+}
+
+.mausac {
+    font-size: 14pt;
+    font-family: monospace;
+    padding-bottom: 10px;
+}
+
+.border {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgb(225, 243, 184);
+    background: rgb(225, 243, 184);
+}
+
+.bangsize {
+    font-family: monospace;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bangsize a {
+    font-size: 10pt;
+    text-decoration: none;
+}
+
+.kichthuoc {
+    font-size: 13pt;
+}
+
+.kichthuoc button {
+    border: 2px solid #8b8b8b;
+    color: black;
+    background: white;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 10pt;
+    border-radius: 5px;
+}
+
+.thanh {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.themvaogiohang button {
+    border-radius: 5px;
+    width: 500px;
+    height: 40px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 13pt;
+    color: rgb(110, 110, 255);
+    border: 2px solid rgb(110, 110, 255);
+    background: white;
+}
+
+.muahang button {
+    border-radius: 5px;
+    border: 2px solid rgb(110, 110, 255);
+    color: white;
+    background: rgb(110, 110, 255);
+    font-weight: bold;
+    font-family: monospace;
+    width: 500px;
+    height: 40px;
+    font-size: 13pt;
+}
+
+.motasanpham {
+    padding-top: 50px;
+}
+
+.motasanpham p {
+    font-size: 20pt;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.motasanpham li {
+    font-family: monospace;
+    padding-left: 20px;
+}
+
+.lienket {
+    padding-left: 220px;
+}
+
+.lienket a {
+    color: #8b8b8b;
+    text-decoration: none;
+    font-family: monospace;
+}
+
+/*-----------------------sanpham------------------*/
+#thanhsanpham {
+    width: 100%;
+}
+
+.khungsanpham {
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.sanpham1 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 80px;
+}
+
+.sanpham2 {
+    margin: 0 40px;
+}
+
+.hinhsanpham {
+    overflow: hidden;
+}
+
+.hinhsanpham a {
+    position: relative;
+    display: block;
+}
+
+.hinhsanpham a .icon {
+    position: absolute;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.hinhsanpham a:hover .icon {
+    bottom: 6%;
+}
+
+.hinhsanpham img {
+    display: block;
+    width: 270px;
+    height: 300px;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.hinhsanpham:hover img {
+    transform: scale(0.9);
+}
+
+.hinhsanpham::before img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.icon {
+    display: flex;
+    flex-wrap: nowrap;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 3px;
+}
+
+.icon img {
+    width: 20px;
+    height: 21px;
+    margin: 0 3px;
+    object-fit: cover;
+}
+
+.tensanpham {
+    font-size: 14pt;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+}
+
+.giaban {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.giadagiam {
+    margin-right: 5px;
+    font-size: 13pt;
+}
+
+.phamtramgiam {
+    color: red;
+    font-size: 11pt;
+    text-align: center;
+}
+
+.giagoc {
+    margin-right: 15px;
+    font-size: 13pt;
+    text-decoration: line-through;
+    color: gray;
+}
+
+.quatang {
+    width: 85%;
+    padding-top: 10px;
+}
+
+.khungquatang {
+    border-style: solid;
+    border-color: aquamarine;
+    border-radius: 5px;
+    border-left-width: 7px;
+    border-left-color: rgb(80, 0, 177);
+}
+
+.noidungquatang {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    text-align: left;
+}
+
+.cothebansethich {
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: monospace;
+    padding-left: 150px;
+    margin-top: 30px;
+}
+
+.sanphamcungloai {
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: monospace;
+    padding-left: 150px;
+}
