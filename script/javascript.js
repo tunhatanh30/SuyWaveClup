@@ -25,18 +25,3 @@ listImg.forEach((imgElement, index) => {
         }, 400);
     })
 })
-
-/*-----------------------------------------------------------*/
-var clickbtn = document.getElementsByClassName('nut-hiensanpham')[0];
-var clickcc = document.getElementsByClassName('o-sanpham')[0];
-var bl = false
-clickbtn.addEventListener('click', function () {
-    console.log('a');
-    if (!bl) {
-        clickcc.style.display = 'block';
-        bl == true;
-    } else {
-        clickcc.style.display = 'none';
-        bl = false;
-    }
-})

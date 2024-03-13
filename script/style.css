@@ -8,35 +8,6 @@
 
 }
 
-#searcher {
-    background: white;
-    max-width: fit-content;
-    border-radius: 30px;
-}
-
-#search-box {
-    border: 1px solid black;
-    outline: none;
-    background: none;
-    padding: 0;
-    width: 0;
-    transition: all 0.4s ease-in-out;
-}
-
-#search-btn {
-    cursor: pointer;
-    border: none;
-    font-size: 18px;
-    background: none;
-    padding: 10px;
-}
-
-#searcher:hover #search-box,
-#search-box:valid {
-    width: 300px;
-    padding-left: 10x;
-
-}
 
 /*----------------------------hahahaha------------------------*/
 body::-webkit-scrollbar {
@@ -69,6 +40,7 @@ header {
     justify-content: space-between;
     justify-items: center;
     padding-top: 20px;
+    width: 100%;
 }
 
 .right>ul {
@@ -476,8 +448,6 @@ body {
     font-size: 11pt;
     padding-top: 10px;
 }
-
-/*---------------------------------------*/
 
 /*----------------------------thanhsanpham-----------------*/
 #loaisanpham {

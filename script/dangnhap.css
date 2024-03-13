@@ -69,6 +69,10 @@ span.show {
     transition: 0.4s;
 }
 
+.button a {
+    text-decoration: none;
+}
+
 span.show {
     right: 20px;
     color: #111;
